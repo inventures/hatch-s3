@@ -1,0 +1,35 @@
+title: S3 Upload
+mode: application
+description: Makes your uploaded files go to s3
+icon: upload
+settings:
+  fields:
+    key:
+      title: Amazon API Key
+      type: text
+    secret:
+      title: Amazon API Secret
+      type: text
+    bucket:
+      title: S3 Bucket
+      type: text
+      description: Bucket name or CDN Domain
+    defaultPath:
+      title: Default upload path
+      type: text
+      description: E.g. 'upload'
+    region: 
+      title: Amazon S3 region
+      type: select
+      options:
+        - us-standard: US Standard (default)
+        - us-west-2: US West (Oregon)
+        - us-west-1: US West (Northern California)
+        - eu-west-1: EU (Ireland)
+        - ap-southeast-1: Asia Pacific (Singapore)
+        - ap-northeast-1: Asia Pacific (Tokyo)
+        - sa-east-1: South America (Sao Paulo)
+    imageSizes:
+      title: Image sizes
+      type: text
+      description: 'E.g. 32,48,64,80,160,320,480'
